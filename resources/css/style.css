@@ -9,6 +9,7 @@ body{
   font-size: 30px;
   box-sizing: border-box;
   overflow: hidden;
+  cursor: default;
 }
 
 
@@ -182,8 +183,6 @@ button:focus{
   -o-transform: translateX(-50%);
   height: 100%;
   width: 200px;
-  /* background: lawngreen; */
-  /* z-index: 10; */
 }
 
 .new-game{
@@ -200,6 +199,7 @@ button:focus{
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%); 
   width: 100px;
+  display: none;
 }
 
 .roll-dice{
