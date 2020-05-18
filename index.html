@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./vendors/css/normalize.css">
+  <link rel="stylesheet" href="./resources/css/style.css">
+</head>
+<body>
+  
+  <div class="wrapper start" id="wrapper-start">
+    <h1 class="game-title">PIG GAME</h1>
+    <button class="game-start"><ion-icon name="play-circle-outline" class="icon start"></ion-icon>START!!</button>
+  </div>
+
+  <div class="wrapper game" id="wrapper-game">
+    <div class="display active" id="display-0">
+      <div class="player-tag" id="player-0-tag">player 1</div>
+      <div class="world-score" id="world-0-score">0</div>
+      <div class="current-box">
+        <div class="current-score" id="current-0-score">Current Score</div>
+        <div class="dice-score">0</div>
+      </div>
+    </div>
+    <div class="display" id="display-1">
+      <div class="player-tag" id="player-1-tag">player 2</div>
+      <div class="world-score" id="world-1-score">0</div>
+      <div class="current-box">
+        <div class="current-score" id="current-1-score">Current Score</div>
+        <div class="dice-score">0</div>
+      </div>
+    </div>
+    <div class="center-col">
+      <button class="new-game"><ion-icon name="sync-circle-outline" class="icon new"></ion-icon>New Game</button>
+      <img src="./resources/img/dice-1.png" alt="dice" class="img-dice">
+      <button class="roll-dice"><ion-icon name="add-circle-outline" class="icon roll"></ion-icon>Roll Dice</button>
+      <button class="keep-point"><ion-icon name="checkmark-circle-outline" class="icon keep"></ion-icon>Keep</button>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <script src="./resources/js/app.js"></script>
+</body>
+</html>

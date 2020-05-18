@@ -1,0 +1,216 @@
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+  background-image: url(./img/heroPig.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+  position: relative;
+  font-weight: 100;
+  font-size: 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+
+.wrapper{
+  background: rgba(255, 255, 255, 0.651);
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  -webkit-transform: translate(-50% , -50%);
+  -moz-transform: translate(-50% , -50%);
+  -ms-transform: translate(-50% , -50%);
+  -o-transform: translate(-50% , -50%);
+}
+
+.start{
+  /* display: none; */
+}
+
+.game-title{
+  font-weight: 100;
+  font-size: 130px;
+  text-align: center;
+  letter-spacing: 20px;
+}
+
+.game-title::before,
+.game-title::after{
+  content: "";
+  display: inline-block;
+  height: 4px;
+  width: 60px;
+  background: #fab1a0;
+  vertical-align: middle;
+  margin: 0 30px;
+}
+
+button{
+  border: none;
+  background: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  font-weight: 100;
+  display: block;
+  cursor: pointer;
+
+}
+button:hover{
+  font-weight: 300;
+}
+
+button:focus{
+  outline: none;
+}
+
+.game-start{
+  top: 70%;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.icon{
+  margin-right: 5px;
+  color: #f5623f;
+}
+
+.game{
+  display: flex;
+  display: none;
+}
+
+#display-0{
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+#display-1{
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.active{
+  background: rgba(206, 206, 206, 0.596);
+}
+
+.active .player-tag::before,
+.active .player-tag::after{
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #A67033;
+  vertical-align: middle;
+  margin: 0 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.player-tag{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  top: 10%;
+}
+
+.world-score{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  top: 30%;
+  font-size: 100px;
+}
+
+.current-box{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  top: 70%;
+  width: 300px;
+  text-align: center;
+  background: #fab0a081;
+  /* background: #fab1a0; */
+  padding: 20px 30px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.current-score{
+  letter-spacing: 4px;
+}
+
+.dice-score{
+  margin-top: 15px;
+}
+
+.center-col{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  height: 100%;
+  width: 200px;
+  /* background: lawngreen; */
+  /* z-index: 10; */
+}
+
+.new-game{
+  top: 5%;
+}
+
+.img-dice{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%); 
+  width: 100px;
+}
+
+.roll-dice{
+  top: 65%;
+}
+
+.keep-point{
+  top: 80%;
+}
+
+.center-col button{
+  display: flex;
+  align-items: center;
+}
