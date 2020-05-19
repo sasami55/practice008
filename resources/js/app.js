@@ -1,10 +1,16 @@
-var scores , activeScore , dice , activePlayer , rollDice , changePlayer , init , gamePlaying;
+var scores , activeScore , dice , activePlayer , rollDice , changePlayer , init , gamePlaying , hideDice , selectCurrentScore;
 
 init();
 
 function rollDice() {
   dice = Math.floor(Math.random() * 6 + 1);
 };
+
+function hideDice() {
+  document.querySelector('.img-dice').style.display = 'none';
+} 
+
+selectCurrentScore = document.querySelector('#current-' + activePlayer + '-score');
 
 function init() {
   gamePlaying = true;
@@ -25,7 +31,7 @@ function init() {
   document.querySelector('#current-0-score').textContent = activeScore;
   document.querySelector('#current-1-score').textContent = activeScore;
 
-  document.querySelector('.img-dice').style.display = 'none';
+  hideDice()
 
   document.querySelector('#player-0-tag').style.color = 'black'
   document.querySelector('#player-1-tag').style.color = 'black'
@@ -39,7 +45,7 @@ function changePlayer() {
   document.querySelector('#display-0').classList.toggle('active');
   document.querySelector('#display-1').classList.toggle('active');
   document.querySelector('#current-' + activePlayer + '-score').style.color = 'black'
-  document.querySelector('.img-dice').style.display = 'none';
+  hideDice()
 };
 
 // game start
@@ -84,7 +90,7 @@ document.querySelector('.keep-point').addEventListener('click' , function () {
     if (scores[activePlayer] >= 30 ){
       document.querySelector('#player-' + activePlayer + '-tag').textContent = 'winner!!';
       document.querySelector('#player-' + activePlayer + '-tag').style.color = '#f5623f'
-      document.querySelector('.img-dice').style.display = 'none';
+      hideDice()
       gamePlaying = false;
     } else {
       changePlayer();
